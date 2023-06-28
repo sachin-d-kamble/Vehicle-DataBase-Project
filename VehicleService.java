@@ -50,12 +50,7 @@ public interface VehicleService {
 	Vehicle updatePrice(Vehicle v1);
 	
 	Vehicle updateImage(Vehicle v1);
-	/* 
-	 
-	 
-	 
-	 
-	 */
+	
 }
 //-----------------------------------------End--------------------------------------------//
 
