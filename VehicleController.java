@@ -19,12 +19,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.demo.module.Vehicle;
 import com.example.demo.module.VehicleAdmin;
 import com.example.demo.service.VehicleService;
+
 //---------------------------------------------Start---------------------------------------------------//
-
-//import jakarta.servlet.http.HttpSession;
-
-// BackEnd Server Port-> "http://localhost:8080" -> Server Port Miss-match (Error)
-// FrontEnd Server Port-> "http://127.0.0.1:5500" -> FrontEnd & BackEnd Server Port Should match
 @CrossOrigin(origins = "http://127.0.0.1:5500") // <- Permission Allowed for this Origin
 @RestController
 public class VehicleController {
@@ -33,8 +29,8 @@ public class VehicleController {
 	VehicleService vSer;
 	
 //-----------------------------------------Login--------------------------------------------//
-	@GetMapping("login") // @RequestHeader
-	ResponseEntity<VehicleAdmin> home( String data, String password) {
+	@GetMapping("login") // 
+	ResponseEntity<VehicleAdmin> home(@RequestBody String data, String password) {
 		return new ResponseEntity<VehicleAdmin>(vSer.logIn(data, password), HttpStatus.FOUND);
 	}
 	
