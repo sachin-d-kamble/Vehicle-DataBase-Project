@@ -28,7 +28,7 @@ public class VehicleController {
 	
 //-----------------------------------------Login--------------------------------------------//
 	@GetMapping("login") // 
-	ResponseEntity<VehicleAdmin> home(@RequestBody String data, String password) {
+	ResponseEntity<VehicleAdmin> home(String data, String password) {
 		return new ResponseEntity<VehicleAdmin>(vSer.logIn(data, password), HttpStatus.FOUND);
 	}
 	
