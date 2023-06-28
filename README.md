@@ -1,3 +1,3 @@
 # Vehicle-DataBase-Project
-I have Done this Project by using Java SpringBoot Framework as Backend and 
-Frontend as HTML,CSS & JavaScript
+I have done this Project by using Java SpringBoot Framework as a Backend and 
+HTML,CSS & JavaScript as Frontend.
